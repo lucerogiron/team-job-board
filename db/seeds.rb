@@ -1,11 +1,4 @@
-<<<<<<< HEAD
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the bin/rails db:seed command (or created alongside the database with db:setup).
-#
-# Examples:
-#
-#   movies = Movie.create({ name: "Star Wars" }, { name: "Lord of the Rings" }])
-#   Character.create(name: "Luke", movie: movies.first)
+
 Job.create(
   company_id: 1, 
   title: "Cashier", 
@@ -57,7 +50,15 @@ Job.create(
   location: "Seattle, WA", 
   active: true, 
   salary_range: "$50,000 annually")
-=======
+
+#   movies = Movie.create([{ name: "Star Wars" }, { name: "Lord of the Rings" }])
+#   Character.create(name: "Luke", movie: movies.first)
+
+# User.create(name: "Luke", email: "forceBwithU@example.com", password: "password")
+# User.create(name: "Neil", email: "EllisonPower@example.com", password: "password2")
+# User.create(name: "Lucero", email: "CodingWizard@example.com", password: "password3")
+# User.create(name: "Leah", email: "marathonrunner1@example.com", password: "password4")
+
 # company = Company.create(
 #   name: "Taco Bell",
 #   logo: "https://1000logos.net/wp-content/uploads/2017/06/Taco-Bell-Logo-500x313.png",
@@ -73,4 +74,4 @@ Job.create(
 #   logo: "https://upload.wikimedia.org/wikipedia/en/thumb/a/a0/RitzCarlton.svg/1024px-RitzCarlton.svg.png",
 #   description: "The Ritz-Carlton is an American multinational company that operates the luxury hotel chain known as The Ritz-Carlton. The company has 108 luxury hotels and resorts in 30 countries and territories with 29,158 rooms, in addition to 46 hotels with 8,755 rooms planned for the future",
 # )
->>>>>>> 7560065010e5293d120a88188fab649c2e986eef
+
