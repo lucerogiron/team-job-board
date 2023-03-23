@@ -1,0 +1,17 @@
+@jwt = eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2Nzk2ODE1NTl9.aHuDv72mQoKdz8_JDlACYnRLtPnnaz-I7_gr6Wizs1U
+
+POST http://localhost:3000/jobs.json
+Authorization: Bearer {{jwt}}
+Content-Type: application/json
+
+{
+  "company_id": 2,
+  "title": "Log Splitter",
+  "description": "Chop logs.",
+  "url": "qwerty7.example",
+  "location": "Fargo, ND",
+  "active": true,
+  "salary_range": "$10 an hour"
+}
+###
+GET http://localhost:3000/jobs.json
