@@ -1,4 +1,4 @@
-@jwt = eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2Nzk2ODE1NTl9.aHuDv72mQoKdz8_JDlACYnRLtPnnaz-I7_gr6Wizs1U
+@jwt = eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2Nzk2ODI0Njl9.P8GsJsIfQL1BnMmzuNt4-EHdlV6XzYZgEgWrnq-jT-w
 
 POST http://localhost:3000/jobs.json
 Authorization: Bearer {{jwt}}
