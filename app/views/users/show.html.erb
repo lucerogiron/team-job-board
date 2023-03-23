@@ -8,3 +8,5 @@
 
   <%= button_to "Destroy this user", @user, method: :delete %>
 </div>
+<%= content_tag :h1, current_user.welcome %>
+<%= link_to "Sign out", session_path, method:"delete" %>
