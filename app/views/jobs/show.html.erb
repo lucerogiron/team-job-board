@@ -1,6 +1,15 @@
-<p style="color: green"><%= notice %></p>
+<div class="card" style="width: 25rem;">
+  <img src="<%= @job.company.logo %>" class="card-img-top" alt="...">
+  <div class="card-body">
+      <p class="card-title"><b>Job Title:</b> <%= @job.title %></p>
+      <p class="card-text"><b>Company Name:</b> <%= link_to @job.company.name, @job.company %></p>
+      <p class="card-text"><b>Description:</b> <%= @job.description %></p>
+      <p class="card-text"><b>URL:</b> <%= link_to @job.url, @job.url %></p>
+      <p class="card-text"><b>Location:</b> <%= @job.location %></p>
+      <p class="card-text"><b>Active:</b> <%= @job.active %></p>
+      <p class="card-text"><b>Salary Range:</b> <%= @job.salary_range %></p>
 
-<%= render @job %>
+  </div>
 
 <div>
   <%= link_to "Edit this job", edit_job_path(@job) %> |

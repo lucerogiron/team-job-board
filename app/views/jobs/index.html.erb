@@ -1,21 +1,27 @@
 <p style="color: green"><%= notice %></p>
 
+
 <h1>Available Jobs</h1>
 
+<div class="card" style="width: 25rem;">
 <div id="jobs-title">
   <% @jobs.each do |job| %>
+  <div class="card" style="width: 18rem;">
+  <img class="card-img-top Card image cap" src="<%= job.company.logo %>" />
+  </div>
     <p>
-      <h3><%= job.title%></h3>
+      <h3><%= link_to job.title, job %></h3>
+    </p>
     <p>
-     
       <%= link_to job.company.name, job.company %>
     </p>
     <p>
       <%= job.description%>
     </p>
-
+     <li class="list-group-item">
   <% end %>
 </div>
+
 
 
 
