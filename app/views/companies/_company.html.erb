@@ -1,17 +1,32 @@
-<div id="<%= dom_id company %>">
-  <p>
-    <strong>Name:</strong>
-    <%= company.name %>
-  </p>
-
-  <p>
-    <strong>Logo:</strong>
-    <%= company.logo %>
-  </p>
-
-  <p>
-    <strong>Description:</strong>
-    <%= company.description %>
-  </p>
-
+<div class="card" style="width: 18rem;">
+  <img src="<%= company.logo %>" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title"><%= company.name %></h5>
+    <p class="card-text"><%= company.description %></p>
+  </div>
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item">
+  
+    <div id="job">
+    <strong>Available Positions</strong>
+  <% company.jobs.each do |job| %>
+    <p><%= job.title %></p>
+  <% end %>
+  
+</div>
+    </li>
+    <li class="list-group-item">
+    <div id="salary">
+  <% company.jobs.each do |job| %>
+    <p><%= job.salary_range %></p>
+  <% end %>
+    </li>
+    <li class="list-group-item">
+      <div id="description">
+  <% company.jobs.each do |job| %>
+    <p><%= job.description %></p>
+  <% end %>
+    </li>
+  </ul>
+ 
 </div>
