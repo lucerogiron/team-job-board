@@ -1,10 +1,54 @@
-<p style="color: green"><%= notice %></p>
-
-<%= render @company %>
-
-<div>
-  <%= link_to "Edit this company", edit_company_path(@company) %> |
-  <%= link_to "Back to companies", companies_path %>
-
-  <%= button_to "Destroy this company", @company, method: :delete %>
+<div class="card" style="width: 18rem;">
+  <img src="<%= @company.logo %>" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title"><%= @company.name %></h5>
+    <p class="card-text"><%= @company.description %></p>
+  </div>
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item">
+  
+    <div id="job">
+    <strong>Available Positions</strong>
+  <% @company.jobs.each do |job| %>
+    <p><%= job.title %></p>
+  <% end %>
+  
 </div>
+    </li>
+    <li class="list-group-item">
+    <div id="salary">
+  <% @company.jobs.each do |job| %>
+    <p><%= job.salary_range %></p>
+  <% end %>
+    </li>
+    <li class="list-group-item">
+      <div id="description">
+  <% @company.jobs.each do |job| %>
+    <p><%= job.description %></p>
+  <% end %>
+    </li>
+  </ul>
+ 
+</div>
+
+      <h3><% @company.jobs%></h3>
+      <% @company.jobs.each do |job|%>
+       <p>
+      <h3><%= job.title%></h3>
+      </p>
+     
+      <p>
+      <%= job.salary_range%>
+      </p>
+
+      <p>
+      <%= job.description%>
+      </p>
+
+      <p></p>
+  <%end%>
+<div>
+  <%= link_to "Back to companies", companies_path %>
+</div>
+
+
