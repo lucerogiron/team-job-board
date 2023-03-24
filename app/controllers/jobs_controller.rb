@@ -1,5 +1,6 @@
 class JobsController < ApplicationController
   before_action :set_job, only: %i[ show edit update destroy ]
+  before_action :authenticate_admin, except: [:index, :show]
 
   # GET /jobs or /jobs.json
   def index
@@ -58,13 +59,14 @@ class JobsController < ApplicationController
   end
 
   private
-    # Use callbacks to share common setup or constraints between actions.
-    def set_job
-      @job = Job.find(params[:id])
-    end
 
-    # Only allow a list of trusted parameters through.
-    def job_params
-      params.require(:job).permit(:company_id, :title, :description, :url, :location, :active, :salary_range)
-    end
+  # Use callbacks to share common setup or constraints between actions.
+  def set_job
+    @job = Job.find(params[:id])
+  end
+
+  # Only allow a list of trusted parameters through.
+  def job_params
+    params.require(:job).permit(:company_id, :title, :description, :url, :location, :active, :salary_range)
+  end
 end

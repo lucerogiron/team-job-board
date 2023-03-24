@@ -5,8 +5,7 @@
 #   url: "qwerty.example",
 #   location: "Chesapeake, VA",
 #   active: true,
-#   salary_range: "$15 an hour",
-# )
+#   salary_range: "$15 an hour")
 
 # Job.create(
 #   company_id: 1,
@@ -15,8 +14,7 @@
 #   url: "qwerty1.example",
 #   location: "Los Angeles, CA",
 #   active: true,
-#   salary_range: "$19 an hour",
-# )
+#   salary_range: "$19 an hour")
 
 # Job.create(
 #   company_id: 2,
@@ -25,8 +23,7 @@
 #   url: "qwerty2.example",
 #   location: "Miami, FL",
 #   active: false,
-#   salary_range: "$40,000 annually",
-# )
+#   salary_range: "$40,000 annually")
 
 # Job.create(
 #   company_id: 2,
@@ -34,8 +31,7 @@
 #   description: "Respond to hourly restroom cleanups, and keep stores trash-free. Be part of a fast, fun and friendly team. Resolve guest concerns quickly and accurately. Quick respond to clean-up requests. Use excellent guest service skills. Lift 40 pounds. Cross train and work in other areas of store as needed.", url: "qwerty3.example",
 #   location: "New York, NY",
 #   active: true,
-#   salary_range: "$35,000 annually",
-# )
+#   salary_range: "$35,000 annually")
 
 # Job.create(
 #   company_id: 3,
@@ -43,8 +39,7 @@
 #   description: "A Head Chef, is responsible for overseeing kitchen staff and ensuring the quality of food items. Their duties include hiring and training staff to cook their dishes, expediting orders to maintain a steady flow of dishes and creating dishes to add to the menu.", url: "qwerty4.example",
 #   location: "Seattle, WA",
 #   active: false,
-#   salary_range: "$95,000 annually",
-# )
+#   salary_range: "$95,000 annually")
 
 # Job.create(
 #   company_id: 3,
@@ -53,8 +48,7 @@
 #   url: "qwerty5.example",
 #   location: "Seattle, WA",
 #   active: true,
-#   salary_range: "$50,000 annually",
-# )
+#   salary_range: "$50,000 annually")
 
 # User.create(name: "Luke", email: "forceBwithU@example.com", password: "password")
 # User.create(name: "Neil", email: "EllisonPower@example.com", password: "password2")
