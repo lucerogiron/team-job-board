@@ -1,6 +1,10 @@
 class JobsController < ApplicationController
   before_action :set_job, only: %i[ show edit update destroy ]
   before_action :authenticate_admin, except: [:index, :show]
+<<<<<<< HEAD
+=======
+
+>>>>>>> 2d85abe5d33a109d3601b98036e9aef95f6a1446
   # GET /jobs or /jobs.json
   def index
     @jobs = Job.all
